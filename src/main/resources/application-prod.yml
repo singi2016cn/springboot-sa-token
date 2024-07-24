@@ -1,0 +1,18 @@
+spring:
+  devtools:
+    add-properties: false
+  datasource:
+    url: jdbc:mysql:///myapi?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
+logging:
+  level:
+    web: info
+decorator:
+  datasource:
+    p6spy:
+      enable-logging: false
+sa-token:
+  is-log: false
+  # jwt秘钥
+  jwt-secret-key: yUxlkvRqnscnGWnYgonR6eTty8dzyaEe
